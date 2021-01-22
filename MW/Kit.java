@@ -28,6 +28,7 @@ public class Kit {
 
     public void equipKit(Player player){
         destroyKit();
+        owner = player;
         player.sendMessage("You equipped " + name + "!");
         player.getInventory().clear();
         player.setExp(0);

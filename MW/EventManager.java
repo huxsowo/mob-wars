@@ -25,11 +25,13 @@ public class EventManager implements Listener {
     public void clickEvent(InventoryClickEvent e){
         ItemStack clickedItem = e.getCurrentItem();
         Material material = clickedItem.getType();
+        Bukkit.broadcastMessage(clickedItem.getType().toString());
         for (Kit kit : Main.allKits){
             if (material == kit.menuItem){
                 kit.equipKit((Player) e.getWhoClicked());
+                e.getWhoClicked().closeInventory();
+                break;
             }
         }
-        e.getWhoClicked().closeInventory();
     }
 }

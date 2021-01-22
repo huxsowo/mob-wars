@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/MobWars_jar</output-path>
     <root id="archive" name="MobWars.jar">
       <element id="module-output" name="MobWars" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/LibsDisguises-10.0.16-Free.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/spigot-1.16.4.jar" path-in-jar="/" />
     </root>
   </artifact>
