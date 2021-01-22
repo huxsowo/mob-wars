@@ -1,0 +1,10 @@
+main: MW.Main
+name: MobWars
+version: 1
+author: Huxs
+description: 'mob war'
+api-version: 1.16
+commands:
+  kit:
+    description: 'Lets you choose your kit'
+    usage: /kit
