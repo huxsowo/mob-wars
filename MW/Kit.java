@@ -28,6 +28,7 @@ public class Kit {
 
     public void equipKit(Player player){
         destroyKit();
+        player.sendMessage("You equipped " + name + "!");
         player.getInventory().clear();
         player.setExp(0);
         player.setWalkSpeed(speed);
@@ -40,9 +41,10 @@ public class Kit {
             disg.startDisguise();
         }
         else {
-            DisguiseAPI.undisguiseToAll(player);
+            try {
+                DisguiseAPI.undisguiseToAll(player);
+            } catch (NullPointerException ex){}
         }
-        player.sendMessage("You equipped " + name + "!");
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP,1,1);
     }
 

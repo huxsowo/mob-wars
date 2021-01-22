@@ -19,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nOZ87Tl8kMdrkieOdRrub7Rsby" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
@@ -26,8 +29,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/LibsDisguises-10.0.16-Free.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/MobWars_jar" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -49,18 +52,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1611262951685" />
-    <state x="690" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611280812132">
+    <state x="690" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611291388573">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611280812132" />
-    <state x="666" y="281" key="FileChooserDialogImpl" timestamp="1611281828289">
+    <state x="690" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1611291388573" />
+    <state x="666" y="281" key="FileChooserDialogImpl" timestamp="1611291406403">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="666" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1611281828289" />
-    <state x="440" y="114" key="SettingsEditor" timestamp="1611281835396">
+    <state x="666" y="281" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1611291406403" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1611291411673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1611281835396" />
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1611291411673" />
     <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1611262946347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
