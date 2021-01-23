@@ -1,22 +1,21 @@
 package MW;
 
+import MW.GameManagers.EventManager;
 import MW.Kits.KitZombie;
-import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.HashMap;
 
 public class Main extends JavaPlugin implements Listener {
 
     public static Plugin ourInstance;
     public static Kit[] allKits;
+    public static HashMap<Player, GamePlayer> gamePlayerHashMap = new HashMap<>();
 
     public static void main(String[] args){
     }
@@ -42,18 +41,7 @@ public class Main extends JavaPlugin implements Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-        switch (cmd.getName().toLowerCase()){
-            case "kit":
-                Inventory kitMenu = Bukkit.createInventory((Player) sender, InventoryType.CHEST);
-                for (Kit kit : allKits){
-                    ItemStack kitItem = new ItemStack(kit.menuItem,1);
-                    ItemMeta meta = kitItem.getItemMeta();
-                    meta.setDisplayName(kit.name);
-                    kitItem.setItemMeta(meta);
-                    kitMenu.addItem(kitItem);
-                }
-                ((Player) sender).openInventory(kitMenu);
-        }
+        allKits[0].equipKit((Player) sender); //temporary code that equips the kit being used for testing. will be replaced with a proper command when another kit is added.
         return true;
     }
 }

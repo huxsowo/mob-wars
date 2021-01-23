@@ -27,8 +27,9 @@ public class Kit {
     public Kit(){this.plugin = Main.getInstance();}
 
     public void equipKit(Player player){
-        destroyKit();
+        destroyKit(player);
         owner = player;
+        Main.gamePlayerHashMap.get(player).setKit(this);
         player.sendMessage("You equipped " + name + "!");
         player.getInventory().clear();
         player.setExp(0);
@@ -49,7 +50,12 @@ public class Kit {
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP,1,1);
     }
 
-    public void destroyKit(){
+    public void destroyKit(Player player){
+        Main.gamePlayerHashMap.get(player).setKit(null);
         owner = null;
     }
+
+    public double getDamage(){return damage;}
+
+    public double getArmor(){return armor;}
 }
