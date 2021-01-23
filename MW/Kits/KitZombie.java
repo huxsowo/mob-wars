@@ -12,7 +12,7 @@ public class KitZombie extends Kit {
 
         this.name = "Zombie";
         this.damage = 6.0;
-        this.armor = 5.0;
+        this.armor = 5.5;
         this.knockback = 1.25;
         this.regen = 0.25;
         this.speed = 0.21f;
